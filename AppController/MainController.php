@@ -1,5 +1,7 @@
 <?php
 
+require_once 'DAO/MainDAO.php';
+
 class MainController extends MainDAO
 {
 
