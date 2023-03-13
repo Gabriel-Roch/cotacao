@@ -2,9 +2,10 @@
 
 require_once "setup.php";
 
+//TELA DE LOGIN
 Flight::route('/', ['MainController','index']);
 
-Flight::route('/main',['MainController','main']);
-
+//TELA DE CADASTRO
+Flight::route('/cadastro',['MainController','cadastro']);
 
 Flight::start();

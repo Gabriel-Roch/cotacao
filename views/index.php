@@ -12,23 +12,36 @@
     </title>
 </head>
 
-<body>
+<body style="background-color:azure;">
 
-    <div class="row">
-        <div class="d-flex justify-content-center p-2">
-            <h1 class="p-2">Página Inicial</h1>
+    <div class="container-fluid p-5">
+        <div class="card">
+            <h1 class="d-flex justify-content-center">SISTEMA DE COTAÇÃO</h1>
         </div>
-        <div class="d-flex justify-content-center p-2">
-            <button class="btn btn-success" id="btn_button" class="btn btn-success">Button</button>
+    </div>
+
+<form action="#" method="POST">
+    <div class="row d-flex justify-content-center mt-5">
+        <div class="card col-md-4 p-3">
+            <label class="mt-2" for="login_username">LOGIN</label>
+            <input id="login_username" class="form-control mt-2" type="text" placeholder="username" name="login_username">
+            <label class="mt-2" for="login_password">PASSWORD</label>
+            <input id="login_password" class="form-control mt-2" type="text" placeholder="passoword" name="login_password">
+            <button id="button_login" type="submit" class="btn btn-success mt-3">LOGIN</button>
         </div>
+    </div>
+<form>
+
+    <div class="d-flex justify-content-center mt-2">
+            <a href="./cadastro">cadastre-se</a>
     </div>
 
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.js"
     integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
     crossorigin="anonymous"></script>
 <script src="views/javascript/index.js"></script>

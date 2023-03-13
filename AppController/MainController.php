@@ -12,12 +12,10 @@ class MainController extends MainDAO
        
     }
 
-    public static function main()
+    public static function cadastro()
     {
-
-        $dados = self::getdata();
-        echo json_encode($dados);
-        // Flight::render('table',['body' => $dados]);
+        Flight::render('cadastro',['titulo' => 'CADASTRO']);
     }
 
+   
 }
