@@ -8,4 +8,6 @@ Flight::route('/', ['MainController','index']);
 //TELA DE CADASTRO
 Flight::route('/cadastro',['MainController','cadastro']);
 
+Flight::route('/main',['MainController','main']);
+
 Flight::start();

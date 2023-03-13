@@ -1,6 +1,12 @@
-let button = document.querySelector('#btn_button');
 
-button.addEventListener('click',()=>{
-    alert("JavaScript Funcionando");
-})
+$(document).ready(function () {
+    var table = $('#example').DataTable({
+        lengthChange: false,
+        // buttons: ['copy', 'excel', 'pdf', 'colvis']
+    });
+
+    table.buttons().container()
+        .appendTo('#example_wrapper .col-md-6:eq(0)');
+});
+
 

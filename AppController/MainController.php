@@ -17,5 +17,10 @@ class MainController extends MainDAO
         Flight::render('cadastro',['titulo' => 'CADASTRO']);
     }
 
+    public static function main()
+    {
+        Flight::render('main',['titulo' => 'Pagina Principal']);
+    }
+
    
 }
